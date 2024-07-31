@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.toggled {
+  display: block !important; /* Assurez-vous qu'elle est affichée */
+}
+
+/* Pour la réactivité, vous pouvez ajouter des règles spécifiques pour la largeur de l'écran */
+@media (max-width: 767px) {
+  .toggled {
+    position: fixed; /* Vous pouvez ajuster la position selon vos besoins */
+    width: 50%; /* Assurez-vous qu'elle occupe toute la largeur sur mobile */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assurez-vous qu'elle est au-dessus du contenu principal */
+  }
+}
